@@ -1,0 +1,109 @@
+.search-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-history-header {
+  background-color: #282c34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2vmin;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 3px solid white;
+}
+
+.search-history-header h5 {
+  margin: auto 2px;
+  padding: 2px;
+  color: white;
+}
+
+.search-history-header h6 {
+  margin: auto 2px;
+  color: lightgray;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 2vmin;
+  cursor: pointer;
+}
+
+.text-muted {
+  opacity: 0.5;
+}
+
+.search-history-item {
+  background-color: #282c34;
+  color: white;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vmin;
+}
+
+.search-history-item p {
+  margin: 0;
+  padding: 2px;
+}
+
+time {
+  font-size: 2vmin;
+  margin-right: 1vmin;
+}
+
+time:nth-child(2n) {
+  display: none;
+}
+
+.custom-button {
+  background-color: orange;
+  border: 1px solid transparent;
+}
+
+.custom-button:after {
+  content: "\274c";
+  color: #282c34;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 1px;
+  text-align: center;
+  margin-left: 1vmin;
+}
+
+@media screen and (max-width: 900px) {
+  time:nth-child(1n) {
+    display: none;
+  }
+  time:nth-child(2n) {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  time {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=SearchHistory.css.map */
